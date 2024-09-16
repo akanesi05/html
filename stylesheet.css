@@ -1,3 +1,39 @@
-.title {
-    color: #02ccba;
+
+  .card {
+    max-width: 320px;
+    text-align: center;
+    margin: auto;
+
+
   }
+  
+  .card-img {
+    width: 100%;
+    
+  }
+  
+  .card-bottom {
+    padding: 32px 16px;
+    background-color: #02ccba;
+    text-align: left;
+  }
+  
+  .card-title {
+    margin-bottom: 16px;
+  }
+  
+  .card-btn {
+    border: solid 1px #333333;
+    border-radius: 8px;
+    padding: 8px;
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+    margin: 1px 1px;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: normal;
+  } 
