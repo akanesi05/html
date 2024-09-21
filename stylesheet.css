@@ -37,3 +37,77 @@
     list-style-type: none;
     font-weight: normal;
   } 
+
+
+
+
+
+/*ハンバーガー見本
+  /* 共通パーツ */
+body {
+  color: #333;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+/* ヘッダー */
+.header {
+  border-bottom: 1px solid #ebeaeb;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.header-logo {
+  padding-top: 8px;
+  color: #26a69a;
+}
+.header-nav {
+  padding: 8px;
+  color: #26a69a;
+}
+.menu {
+  display: flex;
+}
+.menu-item {
+  margin-right: 24px;
+}
+.hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.line-top,
+.line-center,
+.line-bottom {
+  width: 30px;
+  height: 2px;
+  background-color: #26a69a;
+  position: absolute;
+}
+.line-top {
+  top: 0;
+}
+.line-center {
+  top: 14px;
+}
+.line-bottom {
+  top: 29px;
+}
+
+/* 問題2. レスポンシブでメニューをハンバーガーに切り替えよう */
+@media screen and (max-width: 600px) {
+  .header-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
