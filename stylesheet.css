@@ -111,3 +111,24 @@ body {
     display: block;
   }
 }
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #000;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: #fff;
+}
+
+.card.joker {
+  background-color: yellow; /* JOKERだけ特別な色 */
+}
